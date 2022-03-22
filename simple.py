@@ -13,6 +13,8 @@ satisfy(
     [Sum(x[i, i] for i in range(n)) == sum],
 )
 
+#supprimer sols=ALL pour trouver la première solution qui vient le nombre de solutions ne sera plus representatif mais ca ira plus vite
+
 if solve(sols=ALL) is SAT:
     for i in range(n):
         print(values(x[i]))
