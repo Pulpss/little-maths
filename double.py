@@ -3,9 +3,9 @@ from pycsp3 import *
 n = int(input("Donner valeur n: "))
 
 sum = int(n*(n*n+1)/2)
-sumSquared = int((n+1)*(2*n+1)/6)
+sumSquared = int((n*n+1)*(2*n*n+1)/6)
 
-print(str((n+1)*(2*n+1)/6))
+print(str(sumSquared))
 
 x = VarArray(size=[n, n], dom=range(1, n*n+1))
 
